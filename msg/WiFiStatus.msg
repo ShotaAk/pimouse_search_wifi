@@ -1,2 +1,2 @@
-int16 link
-int16 level
+int32 link
+int32 level
