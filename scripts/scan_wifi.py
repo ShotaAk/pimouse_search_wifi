@@ -24,7 +24,7 @@ if __name__ == '__main__':
                 status.level = target_line[3]
 
                 pub.publish(status)
-        except:
+        except IOError:
             rospy.logerr("cannot read from " + status_file)
 
         rate.sleep()
