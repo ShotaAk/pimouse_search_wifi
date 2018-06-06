@@ -20,8 +20,8 @@ if __name__ == '__main__':
 
                 target_line = lines[2].split()
 
-                status.link = target_line[2]
-                status.level = target_line[3]
+                status.link = float(target_line[2])
+                status.level = float(target_line[3])
 
                 pub.publish(status)
         except IOError:
